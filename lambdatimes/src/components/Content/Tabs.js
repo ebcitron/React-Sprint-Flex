@@ -10,7 +10,7 @@ const Tabs = props =>{
       <div className="topics">
         <span className="title">TRENDING TOPICS:</span>
        
-        {props.tabs.map (tab => {
+        {props.tabs.map(tab => {
           return(
           <Tab tab={tab} selectTabHandler={props.selectTabHandler} selectedTab={props.selectedTab} />
           );
@@ -23,12 +23,12 @@ const Tabs = props =>{
       Tabs.propTypes ={
         tabs: PropTypes.arrayOf(
           PropTypes.oneOf([
-            "React.js",
             "all",
-            "bootstrap",
-            "node",
+            "javascript",
             "technology",
-            "javascript"
+            "node",
+            "React.js",
+            "bootstrap"
           ])
         ),
         selectedTab: PropTypes.string,

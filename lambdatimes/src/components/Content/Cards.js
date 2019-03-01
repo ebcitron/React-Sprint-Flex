@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 const Cards = props => {
   return (
     <div className="cards-container">
-    {props.cards.map(cards =>{
-      return(
-      <Card card = {props.cards} />
-      )}
-    )}:
+    {props.cards.map(c => (
+      
+      <Card card = {c} />
+      ))};
+    
     </div>
-  )
-}
+  );  
+};
 
 Cards.propTypes={
   headline: PropTypes.string,
